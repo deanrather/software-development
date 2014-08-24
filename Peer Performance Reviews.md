@@ -1,8 +1,6 @@
 
 # Peer Performance Reviews
 
-[TOC]
-
 ## Goal
 To promote an environment where everyone is always striving to increase the value they add to the team.
 
