@@ -1,4 +1,4 @@
-softawre-development
-====================
 
-Ideas about how to do Software Development
+
+
+> Written with [StackEdit](https://stackedit.io/).
