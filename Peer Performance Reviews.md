@@ -5,7 +5,7 @@
 To promote an environment where everyone is always striving to increase the value they add to the team.
 
 ## The Problem
-It is difficult for managers to track progress and personal development, as they aren't face-to-face with the developer on a daily basis, and don't necessarily have the technical know-how. If the developer feels their efforts go noticed, they're not motivated to put in effort.
+It is difficult for managers to track progress and personal development, as they aren't face-to-face with the developer on a daily basis, and don't necessarily have the technical know-how. If the developer feels their efforts go un-noticed, they're not motivated to put in effort.
 
 ## Proposed Solution
 Have everybody review everybody.
@@ -107,15 +107,18 @@ For example, Alice's completed review might look like this:
 This review shows a summary of all of Alice's feedback from her peers, without giving away who said what.
 It's clear that the team feels while her productivity is high, she needs motivation else it will decrease. Her focus isn't particularly good, and getting worse, and only one person thought her contribution efforts were increasing. No wonder she ragged on Bob about his ASCII art!
 
-- Individuals should be sent their own review
+- Individuals are sent their own review
 - They can use the feedback to help identify where to focus their efforts
 - They can discuss their results with the team if they choose
 - The manager is sent all the results, and will use them for his big manager decisions
+- the manager schedules meetings to discuss the results with people individually
 
 ### How long will it all take?
 - A Peer Review only takes about 5 minutes
 - As everyone is reviewing everyone, everyone will be required for about 5 minutes multiplied by the size of the team (eg for a team of 4, that's 20 mins each)
 - As it's the interviewer doing all the interviews, it'll take that amount of time, multiplied by the size of the team again (80  mins). Plus about half an hour to tidy up the notes and email them out to everyone.
+- the manager takes about 5 minutes per individual to review the reports
+- the manager and the individuals each spend about 30 minutes in a meeting
 
 ### Moving Forward
 Individuals should keep track of their review, and use them to help identify how they can add value to the team.
