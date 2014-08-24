@@ -1,13 +1,15 @@
 
 # Peer Performance Reviews
 
-### Goal
+[TOC]
+
+## Goal
 To promote an environment where everyone is always striving to increase the value they add to the team.
 
-### The Problem
+## The Problem
 It is difficult for managers to track progress and personal development, as they aren't face-to-face with the developer on a daily basis, and don't necessarily have the technical know-how. If the developer feels their efforts go noticed, they're not motivated to put in effort.
 
-### Proposed Solution
+## Proposed Solution
 Have everybody review everybody.
 
 I got the idea off [Valve](http://media.steampowered.com/apps/valve/Valve_NewEmployeeHandbook.pdf), who don't have managers at all, and with over 330 staff, have a higher profitability-per-employee than Google and Microsoft.
