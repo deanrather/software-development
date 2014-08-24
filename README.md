@@ -1,4 +1,2 @@
-
-
-
-> Written with [StackEdit](https://stackedit.io/).
+# Software Development
+Ideas about how to do software development as a team.
