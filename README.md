@@ -1,8 +1,8 @@
 # Software Development
-Ideas about how to do software development as a team.
 
+The documents in this repo represent my idea of how a software development team can work together to produce great products.
 
-### Recommended Reading
+#### Inspirations & Recommended Reading
 
 - [Getting Things Done](http://www.43folders.com/2004/09/08/getting-started-with-getting-things-done)
 - [The Seven Habits of Highly Effective People](http://en.wikipedia.org/wiki/The_Seven_Habits_of_Highly_Effective_People)
