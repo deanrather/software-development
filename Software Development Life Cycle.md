@@ -233,5 +233,5 @@ Due to time-sensitivity of these issues, Peer Programming will replace a Full QA
 - *What if another Key Feature becomes more important and we want to get it out first?*
 	- Same procedure as "Item Fails Testing"
 - *Automation?*
-	- (QA Automation)[QA Automation.md]
+	- [QA Automation](QA Automation.md)
 - *Unit Testing?*
