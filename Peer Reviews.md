@@ -15,7 +15,7 @@ I got the idea off [Valve](http://media.steampowered.com/apps/valve/Valve_NewEmp
 ### Summary
 
 - An *Interviewer* asks each *Team Member* questions about each of their *Peers*
-- Notes are anonymously saved on a review for that peer
+- Notes are anonymously saved to a review for each peer
 - Each team member receives their review
 - The manager receives all of the reviews
 
@@ -53,7 +53,7 @@ And adds those too,
 	- Handled the FizzBuzz problem really well
 	- Probably shouldn't have spent 3 months putting ASCII art into code
 
-Finally, time to get some measurables.
+Finally, time to get some measurables:
 > On a scale of one-to-ten, five being exactly what you'd expect, 0 being *none whatsoever*, and 11 being *too much*, how has Bob's **productivity** been?
 > 
 > And lately has that been going up or going down?
@@ -72,21 +72,21 @@ At this point Bob's notes should look something like this
 	- Handled the FizzBuzz problem really well
 	- Probably shouldn't have spent 3 months putting ASCII art into code
 	
-	Productivity, Focus, Contribution
+	Productivity, Focus, Contribution:
 	6>, 5<, 6
 
 (In this example Alice has said Bob's Productivity was said to be getting better, his focus worse, and his contribution level hasn't changed)
 
-In Bob's review notes, we have not marked who provided that feedback.
+Note that in Bob's review, we have not marked who provided the feedback.
 If Bob feels like he can't trust the team because someone "ratted him out" about his ASCII art, he should ask the team and start a discussion about it himself.
 
 Now that Alice has reviewed Bob, she is asked the same questions about Carol. Then Dan, and so on.
 Once Alice has reviewed everyone, the Interviewer gets Bob to come in and do the same review. Then Carol, and so on.
 
 Once all the reviews are done, each person (and some other third parties) should each have a Review with several notes, and metrics.
-The interviewee must randomise the notes for each interviewee, so it's not read top-to-bottom in the order the people were interviewed.
+The interviewer must randomise the notes for each team member, so the notes don't just read top-to-bottom in the order the interviews were performed.
 
-For example, Alice's Review completed might look like this
+For example, Alice's completed review might look like this:
 
 	Alice
 	Worked with: Bob, Carol, Dan, Eve
@@ -114,8 +114,9 @@ It's clear that the team feels while her productivity is high, she needs motivat
 
 ### How long will it all take?
 - A Peer Review only takes about 5 minutes
-- As everyone is reviewing everyone, everyone will be required for that amount of time multiplied by the size of the team (eg for a team of 4, that's 20 mins each)
-- As it's the interviewer doing the interviews, it'll take that amount of time, multiplied by the size of the team again (80  mins). Plus about half an hour to tidy, randomise, & email the reviews at the end. 
+- As everyone is reviewing everyone, everyone will be required for about 5 minutes multiplied by the size of the team (eg for a team of 4, that's 20 mins each)
+- As it's the interviewer doing all the interviews, it'll take that amount of time, multiplied by the size of the team again (80  mins). Plus about half an hour to tidy up the notes and email them out to everyone.
 
 ### Moving Forward
 Individuals should keep track of their review, and use them to help identify how they can add value to the team.
+
