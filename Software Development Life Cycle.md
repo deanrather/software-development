@@ -10,25 +10,23 @@ Minimise the amount of time between when an item is completed, and when it's rel
 ### Requirements
 Before a new version can be released to production:
 
-- New items must pass Developer, Peer, and QA Testing
-- The new version must pass a Full QA Cycle
+- New items must pass Developer, Peer, and User Acceptance Testing
+- The new version must pass QA
 
 ### Workflow
-- Work Planning determines the next Key Feature
-- When an item is completed, the Developer & QA both test it against the other completed items in the new version
-- When a Key Feature passes Developer, & QA testing, a Full QA Cycle is performed
-- When a Full QA Cycle completes, the version is released
-- When the version is released, we do Work Planning
+- When an item is completed, the Developer & UAT both test it against the other completed items in the new version
+- When a Key Feature passes Developer Testing & UAT, QA is performed on the version
+- When a version passes QA, it is released
 
 ### Terms
 - Development Cycle -- Period of time between one production release and the next
-- Key Feature -- Primary goal of a development cycle
+- Key Feature -- A Feature worthy of causing a QA & Release Cycle
 - Item -- A Feature, Bug, or Improvement. Has a card and a branch
 - Testing -- Requires that the item has been merged into the version
-- Developer Testing -- Testing by the developer who worked on the item
-- Peer Testing -- Tesing by another developer
-- QA Testing -- Testing by a non developer
-- Full QA Cycle -- Peer Testing of all items, and End-to-end QA testing
+- Developer Testing -- Testing of an item by the developer who worked on the item
+- Peer Testing -- Tesing of an item by another developer
+- UAT (User Acceptance Testing) -- Testing of an item by a non developer
+- QA -- Peer Testing of all items, and an End-to-end UAT of the entire system
 
 ### Version Names
 
@@ -39,7 +37,7 @@ Before a new version can be released to production:
 - Build -- Increments which each merged (or re-merged) item
 
 Most builds will be internal QA releases.
-When a build passes a Full QA Cycle, it will become a production release.
+When a build passes QA, it will become a production release.
 
 --- 
 
@@ -92,10 +90,8 @@ This method requires very little time spent estimating, and gives the up-to-date
 
 ### Lists
 - `Triage` -- Dumping ground for ideas / bugs, etc.
-- `Planning` -- Not yet ready for development to commence
-- `Improvements` -- Improvements to existing features
-- `Bugs` -- Bugs. (Assigned to creator or QA if can't reproduce)
-- `Features` -- New Features
+- `Planning` -- Ordered list of items which need planning before work can commence
+- `Backlog` -- Ordered list of items which are ready to be worked on (or WIP)
 - `Version <Major>.<Feature>` -- The version under current development
 
 #### Housekeeping
@@ -103,8 +99,9 @@ This method requires very little time spent estimating, and gives the up-to-date
 - All cards / lists reviewed prior to Work Planning
 
 ### Version List
-- Named `Version <Major>.<Feature>`
+- Named `Version <Major>.<Feature>.<Build>`
 - Items are moved to top of list upon completion
+- List name is updated each new tagged release
 
 ### Version Branch
 - Named `version.<Major>.<Feature>`
@@ -114,13 +111,7 @@ This method requires very little time spent estimating, and gives the up-to-date
 ### Version Tags
 - Named `<Major>.<Feature>.<Build>`
 - Created when an item is completed and merged into the Version Branch
-- Used to test the item
-
-### Version Cards
-- Named `<Major>.<Feature>.<Build>`
-- Created at the top of the Version List when the version is tagged
-- Can contain changelog
-- New & Changed Items go above Version Card
+- Used to test the item, and the version
 
 ---
 
@@ -135,15 +126,15 @@ This method requires very little time spent estimating, and gives the up-to-date
 ### Completing an Item
 	
 	Move to top of version list
-	Merge into version branch (eg. version-1.12)
-	Tag the version branch (eg 1.12.5)
-	Create Tag card
+	Merge into version branch (eg: version-1.12)
+	Tag the version branch (eg: 1.12.5)
+	Update version list name (eg: Version 1.12.5)
 	Developer Testing
 	Create Package
-	QA Testing
+	User Acceptance Testing
 	If Key Feature
-		Peer Testing
-		Full QA Cycle
+		Peer Testing of Item
+		QA
 		Production Release
 
 ### Developer Testing
@@ -157,12 +148,12 @@ This method requires very little time spent estimating, and gives the up-to-date
 		Fix it
 		GOTO "Completing an Item"
 
-### QA Testing
+### User Accepance Testing
 
 	Upgrade QA Environment to new version
 	Test feature
 	If OK
-		Add `QA OK` label
+		Add `UAT OK` label
 	Else
 		Add reproduction instructions
 		Add `Failed Testing` label
@@ -179,13 +170,13 @@ This method requires very little time spent estimating, and gives the up-to-date
 		Add `Failed Testing` label
 		Discuss with Developer
 
-### Full QA Cycle
+### QA
 
 	Check merged branches match release list
 	Test install on fresh environment
 	Test upgrade on clone of production
 	Peer Testing of all items
-	QA testing of standard functionality
+	User Acceptance Testing of standard functionality
 	
 ### Production Release
 
@@ -194,23 +185,23 @@ This method requires very little time spent estimating, and gives the up-to-date
 	Delete obsolete tags
 	Move Version List to "Live" Board
 
-### Item Fails Full QA Cycle
+### Item Fails QA
 
 	If Key Item or quick to fix
 		Fix it
 	Else
 		Move failed cards out of Version List
 		Revert merge of failed branches
-	Perform Full QA Cycle
+	Perform QA
 
-### New Item is completed during Full QA Cycle
+### New Item is completed during QA
 
 	Put it in a list for the next version
-	If Full QA Cycle fails
+	If QA fails
 		Consider bringing it back into this release
 
 ### Critical Bug found on Production
-Due to time-sensitivity of these issues, Peer Programming will replace a Full QA Cycle.
+Due to time-sensitivity of these issues, Peer Programming will replace QA.
 
 	Checkout production tag & reproduce bug on Dev
 	Create Card with Repro instructions
@@ -235,3 +226,9 @@ Due to time-sensitivity of these issues, Peer Programming will replace a Full QA
 - *Automation?*
 	- [QA Automation](QA Automation.md)
 - *Unit Testing?*
+- *What if the Backlog and Planning lists are too huge to prioritise?*
+	- Use `▲—— Urgent ——▲` and `▼  —— Non-Urgent —— ▼` dividers in the list
+	- Unprioritised things go inbetween the two diviers, and are generalised into "urgent" or "non-urgent" periodically.
+	- When the Urgent section approaches completion, pick the next (20) non-urgent items and prioritise them above the line.
+- *Why not add an "Under Assessment" list for features that aren't decided whether they should be worked on or not?*
+	- These belong in "Planning"
