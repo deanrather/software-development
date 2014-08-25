@@ -6,7 +6,7 @@ This document is still WIP
 ![Funny comic about Estimating](http://www.curtis.lassam.net/comics/estimation_smaller.gif)
 
 ## Goal
-To establish what big items are to be worked on for the next release
+To take an item out of the "Planning" list, and get it into the "Backlog".
 
 ## Requirements
 - Should not take all day
