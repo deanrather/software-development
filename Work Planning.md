@@ -14,8 +14,6 @@ To take an item out of the "Planning" list, and get it into the "Backlog".
 ## Process
 I'm mostly just going to be rehashing [Getting Things Done](http://gettingthingsdone.com/)'s [Natural Planning Method](http://gtd.marvelz.com/blog/2007/08/28/five-phases-of-project-planning/) and [The Seven Habits of Highly Effective People](http://en.wikipedia.org/wiki/The_Seven_Habits_of_Highly_Effective_People), because I think they're awesome.
 
-Work planning commences as soon as a production release is out-the-door.
-
 >> Habit 3: Put First Things First
 
 The primary objective is to determine what the next Key Feature is, and how to get it done.
