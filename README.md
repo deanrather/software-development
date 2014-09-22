@@ -2,6 +2,8 @@
 
 The documents in this repo represent my idea of how a software development team can work together to produce great products.
 
+Get started [Here](Software Development Life Cycle.md)
+
 #### Inspirations & Recommended Reading
 
 - [The Seven Habits of Highly Effective People](http://en.wikipedia.org/wiki/The_Seven_Habits_of_Highly_Effective_People)
