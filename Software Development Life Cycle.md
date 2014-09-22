@@ -33,8 +33,10 @@ This document outlines how a small team can use Git and Trello to rapidly develo
 		Have a Peer review the spec
 	else
 		Prepare Work Planning Notes
-		Do [Work Planning](Work Planning.md) (probably produces many Backlog Cards)
+		Do Work Planning (probably produces many Backlog Cards)
 	Move to Backlog
+
+See: [Work Planning](Work Planning.md)
 
 ### Working on an Item
 
@@ -49,32 +51,38 @@ This document outlines how a small team can use Git and Trello to rapidly develo
 	Merge into Version Branch
 	Tag the Version Branch with new version number
 	Update Version Card with version number
-	Perform [Developer Testing](Testing.md)
+	Perform Developer Testing
 	Remove `WIP` label
 	Create Package
+
+See: [Developer Testing](Testing.md)
 	
 ### User Testing
 
 	For each Card in Version List without any labels
-		Perform [User Testing](Testing.md)
+		Perform User Testing
 		If OK
 			Add `User Tested` label
 		Else
 			Add reproduction instructions
 			Add `Failed Testing` label
 			
+See: [User Testing](Testing.md)
+			
 ### Version Lockdown & QA
 
 	If All Items (including Key Item) have `User Tested` label
 		Lock Down Version
 		For each item in version
-			Perform [Peer Testing](Testing.md)
+			Perform Peer Testing
 			If OK
 				Add `Peer Tested` label
 			Else
 				Add `Failed Testing` label
 				Discuss with Developer
-		Perform [End-To-End Test](Testing.md)
+		Perform End-to-end Testing
+
+See: [Peer Testing](Testing.md), [End-To-End Testing](Testing.md)
 
 ### Item Fails QA
 
