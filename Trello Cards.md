@@ -7,19 +7,19 @@ eg: `Facebook Integration`, `Coloured Widgets : more colours Improvement`
 
 The card description should include details required for a person without your context to understand the issue or feature.
 It should not include remarks or opinions, tips or helpful snippets etc. These things can be added as comments.
-Not all items from the Template are required, eg. you don't need an "Observed Behavior" for a new feature.
+Not all items from the Template are required, eg. you don't need an "Observed Behaviour" for a new feature.
 
 ```
-### Desired Behavior
+### Desired Behaviour
 - Short description of how it should behave
 
-### Observed Behavior
+### Observed Behaviour
 - Short description of how it is behaving
 
 ### Reproduction
 - Reproducable Steps
-- That should cause the desired behavior
-- But actually cause the observed behavior
+- That should cause the desired behaviour
+- But actually cause the observed behaviour
 
 ### Affected Areas
 - Things that could be affected by this change

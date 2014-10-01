@@ -27,6 +27,8 @@
 - Has Spec
 - Follows the Spec
 - Use QA Environment
+- Check it works
+- Check the affected files are written correctly etc.
 - Output / Logging is Correctly Implemented
 - Check Error Logs
 - Integrates with Support Tools
@@ -37,4 +39,3 @@
 - Fresh Install
 - Upgrade on Clone of Production
 - Standard Functionality Run-through
-
