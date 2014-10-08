@@ -188,12 +188,12 @@ They also have Trello Version Cards and Git Version Tags to tag stable points in
 
 #### Trello Version List
 
-- Named `<Major>.<Feature>`
+- Named `Version <Major>.<Feature>`
 - Items are moved to top of list upon completion
 
 #### Git Version Branch
 
-- Named `<Major>.<Feature>`
+- Named `version.<Major>.<Feature>`
 - Forks from production version tag
 - Only used for merging and tagging
 

@@ -2,7 +2,7 @@
 
 Named: `<Feature Name>[ : <short description> [Bug|Improvement] ]`
 eg: `Facebook Integration`, `Coloured Widgets : more colours Improvement`
-	
+    
 ## Card Description
 
 The card description should include details required for a person without your context to understand the issue or feature.
@@ -30,8 +30,12 @@ Not all items from the Template are required, eg. you don't need an "Observed Be
 **Spec:** `/path/to/spec`
 **Branch:** `<branch-name>` forks from `<version>`
 **Merges:** list of branches, or cards
-**Dev Time:** 0/1
 **Next Action:** eg: @Bob to finish some card
+
+    Date       | Spent | Remaining | Note
+    -----------|-------|-----------|------
+    Mon 01 Jan | 0     | 1h        | Example First Estimate
+
 ```
 
 ## Comments
@@ -44,10 +48,15 @@ When work is done on a card, add the information:
 
 - Time Spent
 - Estimated Time Remaining
+- A Note about the work done (optional)
 
 For example, say you originally thought an item would take 2 hours, but after spending 4 hours working on it, you think there's actually another 4 hours to go. The next day you spend 1 hour and finish it.
 
-	Dev Time: 0/2, 4/4, 1/0
+    Date       | Spent | Remaining | Note
+    -----------|-------|-----------|------
+    Mon 05 Jun | 0     | 2         | Should be easy, just use the API (Mon 2 Jun)
+    Tue 06 Jun | 4     | 4         | Had to rewrite the API(Tue 3 Jun)
+    Thu 08 Jun | 1     | 0         | It just worked (Thu 5 Jun)
 
 This method requires very little time spent estimating, and gives the up-to-date and honest estimates available at a glance. It also provides a historical record of how good you are at estimating!
 
