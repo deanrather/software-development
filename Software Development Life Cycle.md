@@ -174,8 +174,8 @@ eg: `Facebook Integration`, `Coloured Widgets : more colours Improvement`
 
 #### Git Dev Branches
 
-Named `dev.<developer>.<feature-name>[.[bugfix|improvement]`
-eg: `dev.dean.facebook-integration`, `dev.dean.coloured-widgets.improvement`
+Named `dev.<developer>.<feature-name>[.<short-description>.bugfix|improvement]`
+eg: `dev.dean.facebook-integration`, `dev.dean.coloured-widgets.more-colours.improvement`
 
 - Feature branches fork from latest production version tag
 - Bugfix and Improvement branches can fork from feature branches

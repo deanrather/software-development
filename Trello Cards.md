@@ -17,7 +17,7 @@ Not all items from the Template are required, eg. you don't need an "Observed Be
 - Short description of how it is behaving
 
 ### Reproduction
-- Reproducable Steps
+- Reproducible Steps
 - That should cause the desired behaviour
 - But actually cause the observed behaviour
 
@@ -78,8 +78,38 @@ I tried these and didn't like them :(
 - Plus for Trello
 - Scrum for Trello
 
-----
+---
 
-## TODO
+## Tips
 
-- Tidy up the estimating example
+### Keyboard Shortcuts
+
+Hover over a card and press:
+
+    Space       Assign Self
+    L           Label Picker
+    M           Member Picker
+    ?           Show Shortcuts
+
+While Typing a Card Title
+
+    ^           List postition
+
+### Card Template Bookmarklet
+
+``` Card Template Bookmarklet
+javascript:var element=$("div.card-detail-edit textarea.field");element.height(600);var original_details=element.val();if(original_details) {original_details="\n\n---\nOriginal Card Details:\n\n" + original_details;}var details="### Desired Behaviour\n- Short description of how it should behave\n\n### Observed Behaviour\n- Short description of how it is behaving\n\n### Reproduction\n- Reproducible Steps\n- That should cause the desired behaviour\n- But actually cause the observed behaviour\n\n### Affected Areas\n- Things that could be affected by this change\n- Including other features, areas, cards, etc.\n\n> Path : To : Thing\n**Identified:** version / environment\n**Spec:** `/path/to/spec`\n**Branch:** `<branch-name>` forks from `<version>`\n**Merges:** list of branches, or cards\n**Next Action:** eg: @Bob to finish some card\n\n    Date       | Spent | Remaining | Note\n    -----------|-------|-----------|------\n    Mon 01 Jan | 0     | 1h        | Example First Estimate\n\n" + original_details;element.val(details);
+```
+
+#### Creating a new Bookmarklet
+
+1. Update the Bookmarklet in `Trello Cards.md`
+2. Copy this Bookmarklet Creator Snippet over the top of the existing Bookmarklet
+3. Paste the template over the top of the word TEMPLATE
+4. Replace all newlines with \n
+5. Edit your bookmark button and paste in the new bookmarklet
+6. Edit the `● ———— Template ———— ●` Card 
+
+``` Bookmarklet Creator Snippet
+javascript:var element=$("div.card-detail-edit textarea.field");element.height(600);var original_details=element.val();if(original_details) {original_details="\n\n---\nOriginal Card Details:\n\n" + original_details;}var details="TEMPLATE" + original_details;element.val(details);
+```
